@@ -1,4 +1,4 @@
-// node migrator ./ms_my.json ./en.json ./migrate.result.json "[NIC]"
+// node ./src/migrator ./test/sample-data/ms_my.json ./test/sample-data/en.json ./migrate.result.json "[NIC]"
 // 
 var logHelper = require('./helpers/logHelper.js');
 var jsonHelper = require('./helpers/jsonHelper.js');
@@ -36,7 +36,7 @@ function migrate(srcData, destData, defaultValueIfNotExistInSource) {
         {
             destData[destKey] = srcData[destKey];
         } else {
-            console.log(defaultValueIfNotExistInSource);
+            
             if (defaultValueIfNotExistInSource !== undefined)
             {
                 destData[destKey] = defaultValueIfNotExistInSource;

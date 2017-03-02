@@ -58,5 +58,5 @@ typings/
 .env
 
 # testing file
-./migrate.result.json
-./translate.result.json
+migrate.result.json
+translate.result.json

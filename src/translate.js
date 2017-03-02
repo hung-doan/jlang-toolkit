@@ -1,4 +1,4 @@
-// node translate ./test/translate/src-en.json en ./translate.result.json ms
+// node ./src/translate ./test/translate/src-en.json en ./translate.result.json ms
 
 var langHelper = require('./helpers/langHelper.js');
 var logHelper = require('./helpers/logHelper.js');
