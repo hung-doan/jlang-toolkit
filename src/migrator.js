@@ -9,6 +9,18 @@ var destPath = argvs[3]
 var resultPath = argvs[4]
 var _defaultValueIfNotExistInSource = argvs[5];
 
+// Checking parameter
+if(argvs.length < 5 )
+{
+    logHelper.log("How to use:");
+    logHelper.log("\tnode migrator [srcPath] [destPath] [resultPath] [defaultValueIfNotExistInSource]");
+    logHelper.log("\nExample:");
+    logHelper.log("\tnode ./src/migrator ./test/sample-data/ms_my.json ./test/sample-data/en.json ./migrate.result.json \"[null]\"");
+    return;
+}
+
+
+
 logHelper.log("Source:"+ srcPath);
 logHelper.log("Destimation:"+ destPath);
 logHelper.log("Result:"+ resultPath);

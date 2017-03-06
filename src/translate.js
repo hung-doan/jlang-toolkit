@@ -10,6 +10,17 @@ var srcLang = argvs[3]
 var resultPath = argvs[4]
 var resultLang = argvs[5]
 
+// Checking parameter
+if(argvs.length !== 6)
+{
+    logHelper.log("How to use:");
+    logHelper.log("\tnode translate [srcPath] [srcLang] [resultPath] [resultLang]");
+    logHelper.log("\nExample:");
+    logHelper.log("\t node ./src/translate ./test/translate/src-en.json en ./translate.result.json ms");
+
+    return;
+}
+
 var defaultValueIfNotTranslated = "";
 
 logHelper.log("Reading:"+srcPath);
