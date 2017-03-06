@@ -9,7 +9,7 @@ Scenario 1:
 		Guide: 
 			Step 1: Translate from en.json (english) to ms.json (malay). 
 				
-				node ./src/translate ./src-en.json en ./translate.result.json ms
+				node ./src/translate ./en.json en ./translate.result.json ms
 				
 				Explain: 
 					node ./src/translate	: call translate function
