@@ -1,6 +1,20 @@
 ---
+Settup:
+		Description: How to run the tools
+		Guide:
+			Step 1: Install node js
+			Step 2: Run bellow command In root directory of the tool (where you can see package.json)
+				npm install
+			Step 3: Finish
+
+---
 Scenario 1: 
-		Descriptio: Update translation for Malay language
+		Description: Translate json file from English to Chinese
+		Guide:
+			node ./src/translate ./en.json en ./translate.result.json zh-cn
+---
+Scenario 2: 
+		Description: Update translation for Malay language
 		Issue: 
 			- There is an existing `Malay Language` file. I want to inherit all translated key.
 			- Some key in old `Malay Language` file was removed
